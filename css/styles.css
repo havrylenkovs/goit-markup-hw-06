@@ -132,11 +132,6 @@ body {
   padding-bottom: 32px;
 }
 
-.menu :hover,
-.menu :focus {
-  color: var(--accent-color);
-}
-
 .menu.list:first-child {
   padding-right: 0;
 }
@@ -161,53 +156,39 @@ body {
 .menu-item:last-child {
   margin-right: 0;
 }
+/* ********************** */
+
+.contact-item {
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-duration) var(--cubic-bezier);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--accent-color);
+}
+
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+}
+
+.icon-contact:hover,
+.icon-contact:focus {
+  fill: var(--accent-color);
+}
 
 .contacts {
   display: flex;
   gap: 50px;
   margin-left: 215px;
-}
-
-.contacts :hover,
-.contacts :focus {
-  color: var(--accent-color);
-}
-
-.icon-contact-mail {
-  fill: currentColor;
-}
-
-.icon-contact-phone {
-  fill: currentColor;
-}
-
-.icon-contact-mail :hover,
-.icon-contact-mail :focus {
-  color: var(--accent-color);
-}
-
-.icon-contact-phone :hover,
-.icon-contact-phone :focus {
-  color: var(--accent-color);
-}
-
-.contact-item {
-  position: relative;
-
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-
-  transition: color var(--transition-duration) var(--cubic-bezier);
 }
 
 /* *********************************MAIN**************************/
