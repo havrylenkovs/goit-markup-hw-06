@@ -642,9 +642,12 @@ span.logo-footer-accent {
 /* ********************************footer-subscribe*********************************** */
 
 .footer-subscribe {
-  margin-left: 93px;
+  margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
+}
+
+.footer-form {
+ display: flex;
 }
 
 .footer-subscribe-title {
@@ -658,11 +661,6 @@ span.logo-footer-accent {
   color: var(--primary-white-color);
 }
 
-.footer-subscribe-container {
-  display: flex;
-  gap: 12px;
-}
-
 .footer-subscribe-email {
   padding: 15px 16px;
   width: 358px;
@@ -672,6 +670,7 @@ span.logo-footer-accent {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: var(--primary-white-color);
+  margin-right: 12px;
 }
 
 .footer-subscribe-button {
