@@ -694,6 +694,7 @@ span.logo-footer-accent {
   color: var(--primary-white-color);
   transition: background-color var(--transition-duration) var(--cubic-bezier);
   cursor: pointer;
+  
 }
 
 .footer-subscribe-button:hover {
