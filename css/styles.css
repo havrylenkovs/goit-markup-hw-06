@@ -667,7 +667,6 @@ span.logo-footer-accent {
 
 .footer-subscribe-email {
   padding: 15px 16px;
-  margin-right: 12px;
   width: 358px;
   background-color: inherit;
   outline: transparent;
@@ -680,6 +679,7 @@ span.logo-footer-accent {
 .footer-subscribe-button {
   gap: 10px;
 
+  margin-left: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -977,23 +977,26 @@ span.logo-footer-accent {
 }
 
 .modal-text-comment::placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .modal-checkbox {
+.modal-checkbox {
   margin-bottom: 30px;
-} */
+}
 
 .check {
-  padding-left: 1.2em;
-  display: block;
-  text-align: center;
+  padding-left: 1em;
+
+  display: flex;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--primary-text-color)
 }
@@ -1005,24 +1008,25 @@ span.logo-footer-accent {
 }
 
 .check-box-icon {
-  margin-left: -1.2em;
-  position: absolute;
+  display: inline-block;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-image: url(/images/box.svg);
+  border-radius: 2px;
+  border: 2px solid black;
 }
 
-
-
-/* .modal-checkbox-input:checked+.icon-check {
-  fill: var(--primary-white-color);
+.checkbox:checked + .check-box-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-} */
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+}
 
 .policy {
   color: var(--accent-color);
   text-decoration: underline;
+  margin-left: 5px;
 }
 
 .button-modal {
