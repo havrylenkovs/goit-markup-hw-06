@@ -875,7 +875,7 @@ span.logo-footer-accent {
   border-radius: 50%;
   padding: 0;
 
-  background-color: var(--background-head-color);
+  background-color: var(--primary-white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1021,6 +1021,20 @@ span.logo-footer-accent {
   border-color: var(--accent-color);
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
+}
+
+
+.checkbox:focus + .check-box-icon {
+  border: 2px solid var(--accent-color);
+}
+
+.check-border {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid blue;
 }
 
 .policy {
