@@ -1023,7 +1023,6 @@ span.logo-footer-accent {
   background-repeat: no-repeat;
 }
 
-
 .checkbox:focus + .check-box-icon {
   border: 2px solid var(--accent-color);
 }
